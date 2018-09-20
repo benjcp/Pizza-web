@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode>
+    <siteMapNode url="index.aspx" title="Pizzas"  description="Pizza Menu and Sides"/> 
+    <siteMapNode url="ViewCart.aspx" title="Cart"  description="View the Cart" />
+	<siteMapNode url="Checkout.aspx" title="Checkout"  description="Checkout with your Order" />
+    </siteMapNode>
+</siteMap>

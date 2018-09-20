@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Index.master.cs" Inherits="Index" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            height: 24px;
+        }
+        .style2
+        {
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+       
+        <table style="width: 100%;">
+        <tr>
+            <td colspan="2"   " class="style1">
+                <img src="Images/header2.jpg" alt="Header"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="style2">
+                <div style="width: 100px">
+                    <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" 
+                        StaticDisplayLevels="3">
+                    </asp:Menu>
+
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                    
+                    
+                </div>
+            </td>
+            <td class="style1">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                &nbsp;</td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
